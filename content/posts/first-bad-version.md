@@ -2,6 +2,8 @@
 title: "First Bad Version"
 date: 2023-01-31T21:33:39-08:00
 draft: true
+tags: [leetcode, interviewing, binary-search]
+categories: [leetcode, interviewing]
 ---
 
 Solving [First Bad Version](https://leetcode.com/problems/first-bad-version/description/) requires familiarity with binary search. Basically, the fastest way to find something (with an asymptotic runtime of *log n*) is to look at the middle of your collection, then go to the middle of either side of it depending on if what you are looking for is less than or greater than the new item at the index. Repeat until you find it or run out of indices. Note, this only works in sorted collections. 
